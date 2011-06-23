@@ -76,7 +76,7 @@ module Shoulda # :nodoc:
         private
 
         def find_existing
-          if @existing = @subject.class.find(:first)
+          if @existing = @subject.class.first
             true
           else
             @failure_message = "Can't find first #{class_name}"
